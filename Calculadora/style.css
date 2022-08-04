@@ -1,24 +1,42 @@
-body {
-    padding: 0;
+*{
     margin: 0;
-    background-image: linear-gradient(to right top, #ff03eb, #ff0089, #ff6e29, #feb900, #a8eb12);
+    padding: 0;
+    text-align: center; 
 }
+
+body {
+     background-image: linear-gradient(to right top, #ff03eb, #ff0089, #ff6e29, #feb900, #a8eb12);
+}
+
 
 .calculadora-grilla {
     display: grid;
     justify-content: center;
     align-content: center;
     min-height: 110vh;
-    grid-template-columns: repeat(4, 85px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.calculadora-grilla > button {
+.boton {
+    width: 84px;
+    height: 84px;
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid white;
     outline: none;
     background-color: rgba(251, 4, 169, 0.978);
+}
+
+#bt_delete{
+    width: 168px;
+}
+
+#bt_igual{
+    height: 168px;
+}
+
+#bt_zero {
+    width: 255px;
 }
 
 .output {
@@ -43,13 +61,3 @@ body {
     background-color: rgba(255, 255, 255, .9);
 }
 
-@media (orientation:landscape){
- body{
- background:pink);
- }
- }
- @media (orientation:portrait){
- body{
- background: 255, 255, 255, .75;
- }
- }
